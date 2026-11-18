@@ -386,44 +386,6 @@ $(document).ready(load);
 //WORK IN PROGRESS ----------------------------------------------
 function toggleDarkMode() {
     if (darkMode.checked) {
-        document.body.style.backgroundColor = "#222222";
-        document.body.style.color = "white";
-        let allFieldsets = document.querySelectorAll("fieldset");
-        for (let i = 0; i < allFieldsets.length; i++) {
-            allFieldsets[i].style.backgroundColor = "#424242";
-        }
-
-        let allInputs = document.querySelectorAll("input");
-        for (let j = 0; j < allInputs.length; j++) {
-            allInputs[j].style.backgroundColor = "#757575";
-            allInputs[j].style.color = "white";
-            allInputs[j].style.border = "1px solid #AAAAAA";
-        }
-
-        let allSelects = document.querySelectorAll("select");
-        for (let k = 0; k < allSelects.length; k++) {
-            allSelects[k].style.backgroundColor = "#545454";
-            allSelects[k].style.color = "white";
-        }
-
-        let allSelect2s = document.getElementsByClassName("pokeselect");
-        for (let l = 0; l < allSelect2s.length; l++) {
-            allSelect2s[l].style.color = "black";
-        }
-
-        let radioLabels = document.getElementsByClassName("radioLbl");
-        let resultLabels = document.getElementsByClassName("resultLbl");
-        for (let p = 0; p < radioLabels.length; p++) {
-            radioLabels[p].style.backgroundColor = "#545454";
-            radioLabels[p].style.color = "white";
-        }
-        for (let q = 0; q < resultLabels.length; q++) {
-            resultLabels[q].style.backgroundColor = "#545454";
-            resultLabels[q].style.color = "white";
-            resultLabels[q].style.border = "1px solid #AAAAAA";
-        }
-    }
-    else {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
         let allFieldsets = document.querySelectorAll("fieldset");
@@ -463,8 +425,45 @@ function toggleDarkMode() {
             resultLabels[q].style.border = "1px solid aaa";
         }
     }
-}
+    else {
+		document.body.style.backgroundColor = "#222222";
+        document.body.style.color = "white";
+        let allFieldsets = document.querySelectorAll("fieldset");
+        for (let i = 0; i < allFieldsets.length; i++) {
+            allFieldsets[i].style.backgroundColor = "#424242";
+        }
 
+        let allInputs = document.querySelectorAll("input");
+        for (let j = 0; j < allInputs.length; j++) {
+            allInputs[j].style.backgroundColor = "#757575";
+            allInputs[j].style.color = "white";
+            allInputs[j].style.border = "1px solid #AAAAAA";
+        }
+
+        let allSelects = document.querySelectorAll("select");
+        for (let k = 0; k < allSelects.length; k++) {
+            allSelects[k].style.backgroundColor = "#545454";
+            allSelects[k].style.color = "white";
+        }
+
+        let allSelect2s = document.getElementsByClassName("pokeselect");
+        for (let l = 0; l < allSelect2s.length; l++) {
+            allSelect2s[l].style.color = "black";
+        }
+
+        let radioLabels = document.getElementsByClassName("radioLbl");
+        let resultLabels = document.getElementsByClassName("resultLbl");
+        for (let p = 0; p < radioLabels.length; p++) {
+            radioLabels[p].style.backgroundColor = "#545454";
+            radioLabels[p].style.color = "white";
+        }
+        for (let q = 0; q < resultLabels.length; q++) {
+            resultLabels[q].style.backgroundColor = "#545454";
+            resultLabels[q].style.color = "white";
+            resultLabels[q].style.border = "1px solid #AAAAAA";
+        }
+    }
+}
 function load() {
     loadDropdowns();
     if (document.cookie != "") {
