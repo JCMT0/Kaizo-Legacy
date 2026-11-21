@@ -7252,7 +7252,8 @@ var moves = {
         type: "Light",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
+        priority: true
     },
 
     gnaw: {
@@ -8705,7 +8706,8 @@ var moves = {
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true
+        contact: true,
+        neg_priority: true
     },
 
     doubleSwipe: {
@@ -8731,7 +8733,8 @@ var moves = {
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true
+        contact: true,
+        neg_priority: true
     },
 
     ragingTackle: {
@@ -9068,7 +9071,8 @@ var moves = {
         type: "Mind",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
+        neg_priority: true
     },
 
     foulChant: {
@@ -10653,7 +10657,8 @@ var moves = {
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true
+        contact: true,
+        neg_priority: true
     },
 
     outburst: {
@@ -11038,7 +11043,8 @@ var moves = {
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true
+        contact: true,
+        priority: true
     },
 
     clawber: {
@@ -11106,6 +11112,7 @@ var moves = {
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
+        neg_priority: true
     },
 
     blindspotBatter: {
@@ -11640,7 +11647,7 @@ var moves = {
         accuracy: "N/A",
         type: "Toxic",
         mr: "Support",
-        protect: true
+        protect: true,
     },
 
     poison: {
@@ -11796,7 +11803,8 @@ var moves = {
         energy: 35,
         accuracy: "N/A",
         type: "Simple",
-        mr: "Support"
+        mr: "Support",
+        priority: true
     },
 
     takeRoot: {
@@ -11954,7 +11962,8 @@ var moves = {
         energy: 45,
         accuracy: "N/A",
         type: "Spirit",
-        mr: "Support"
+        mr: "Support",
+        priority: true
     },
 
     gainDrain: {
@@ -11999,7 +12008,8 @@ var moves = {
         energy: 50,
         accuracy: "N/A",
         type: "Ancient",
-        mr: "Support"
+        mr: "Support",
+        neg_priority: true
     },
 
     baneOfWielding: {
@@ -12200,7 +12210,8 @@ var moves = {
         energy: 30,
         accuracy: "N/A",
         type: "Simple",
-        mr: "Support"
+        mr: "Support",
+        priority: true
     },
 
     enamor: {
@@ -12218,7 +12229,8 @@ var moves = {
         energy: 50,
         accuracy: "N/A",
         type: "Simple",
-        mr: "Support"
+        mr: "Support",
+        neg_priority: true
     },
 
     dejaVu: {
@@ -12237,7 +12249,8 @@ var moves = {
         accuracy: "N/A",
         type: "Mind",
         mr: "Support",
-        pivot: true
+        pivot: true,
+        neg_priority: true
     },
 
     sereneGift: {
@@ -12292,7 +12305,9 @@ var moves = {
         energy: 20,
         accuracy: "N/A",
         type: "Simple",
-        mr: "Support"
+        mr: "Support",
+        priority: true
+        
     },
 
     buckUp: {
